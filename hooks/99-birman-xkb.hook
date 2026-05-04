@@ -1,0 +1,9 @@
+[Trigger]
+Operation = Upgrade
+Type = Package
+Target = xkeyboard-config
+
+[Action]
+Description = Re-applying Birman typography XKB layouts after xkeyboard-config upgrade...
+When = PostTransaction
+Exec = /usr/local/bin/birman-xkb-reapply
